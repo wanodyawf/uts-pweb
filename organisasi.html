@@ -6,132 +6,166 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Struktur Organisasi Universitas Jember</title>
-    <link rel="stylesheet" href="organisasi.css">
+    <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/grid.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script type="text/javascript" src="assets/js/script.js"></script>
 </head>
 
 <body>
     <nav>
-        <div class="backdrop">
-            <div class="container">
-                <div class="col-12">
-                    <img class="logo" src="https://unej.ac.id/wp-content/uploads/2018/01/logo-unej-baku.png">
-                    <h1> UNIVERSITAS <br> JEMBER </h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-4">
+                    <div class="logo">
+                        <div class="logo-text">UNIVERSITAS JEMBER</div>
+                    </div>
+                </div>
+                <div class="col-8">
                     <div class="navbar">
-                        <ul>
-                            <li class="menu"><a href="#">Beranda</a></li>
-                            <li class="menu"><a class="active" href="#">Organisasi</a></li>
-                            <li class="menu"><a href="#">
-                                    <h4>Sejarah</h4>
-                                </a></li>
-                            <li class="menu">
-                                <div class="dropdown">
-                                    <span>Lainnya</span>
-                                    <div class="dropdown-content">
-                                        <p>VISI MISI</p>
-                                        <p>TUJUAN</p>
-                                        <p>TUGAS POKOK</p>
-                                        <P>MOTTO</P>
-                                        <P>FUNGSI</P>
+                        <button id="nav-icon">
+                            <i id="nav-icon-fa" class="fa fa-bars"></i>
+                        </button>
+                        <ul class="menu-container">
+                            <li class="menu"><a href="index.html">Beranda</a></li>
+                            <li class="menu"><a class="active" href="organisasi.html">Organisasi</a></li>
+                            <li class="menu"><a href="sejarah.html">Sejarah</a></li>
+                            <li class="menu"><a id="open-dropdown" href="javascript:void(0)">Lainnya <i class="fa fa-chevron-circle-down"></i></a>
+                                <div class="dropdown-container">
+                                    <div id="dropdown-content" class="dropdown-content hidden">
+                                        <p><a href="visi-misi.html">VISI MISI</a></p>
+                                        <p><a href="tujuan.html">TUJUAN</a></p>
+                                        <p><a href="tugas-pokok.html">TUGAS POKOK</a></p>
+                                        <P><a href="motto.html">MOTTO</a></P>
+                                        <P><a href="fungsi.html">FUNGSI</a></P>
                                     </div>
                                 </div>
-                                <!--<a href="#">
-                                    <h4>Lainnya</h4>
-                                </a>
-                                <ul>
-                                    <li class="submenu"><a href="">VISI MISI</a></li>
-                                    <li class="submenu"><a href="">TUJUAN</a></li>
-                                    <li class="submenu"><a href="">TUGAS POKOK</a></li>
-                                    <li class="submenu"><a href="">MOTTO</a></li>
-                                    <li class="submenu"><a href="">FUNGSI</a></li>
-                                </ul>-->
                             </li>
                         </ul>
                     </div>
-                    </li>
-                    </ul>
-
-
-
                 </div>
             </div>
+        </div>
     </nav>
-    <div>
-        <h3>PIMPINAN UNIVERSITAS JEMBER</h3>
-    </div>
-    <div class="container">
-        <div class="profil">
-            <img class="foto-profil" src="rektor.png" alt="">
-            <div class="nama-profil">Drs. Moh. Hasan, M.Sc, Ph.D</div>
-            <div class="jabatan-profil">Rektor</div>
-        </div>
-        <div class="profil">
-            <img class="foto-profil" src="warek1.png" alt="">
-            <div class="nama-profil">Drs. Zulfikar, Ph.D</div>
-            <div class="jabatan-profil">Wakil Rektor I</div>
-        </div>
-        <div class="profil">
-            <img class="foto-profil" src="warek2.png" alt="">
-            <div class="nama-profil">Drs. Wachju Subchan, MS., Ph.D</div>
-            <div class="jabatan-profil">Wakil Rektor II</div>
-        </div>
-        <div class="profil">
-            <img class="foto-profil" src="warek3.png" alt="">
-            <div class="nama-profil">Prof. Dr. M. Sulton, M.Pd.</div>
-            <div class="jabatan-profil">Wakil Rektor III</div>
-        </div>
-    </div>
-    <footer>
+    <main>
         <div class="container">
-            <div class="bawah">
-                <h3>HUBUNGI KAMI DI :</h3>
-                <div class="contact-info">
-                    <div class="contact-data">
-                        <div class="contact-icon">
-                            <img src="ADDRESS.png" alt="">
-                        </div>
-                        <span class="contact-text">
-                            Jalan. Kalimantan No. 37, Kampus Tegalboto,<br>
-                            Jember, Jawa Timur, 68121, Indonesia
-                        </span>
+            <h3 class="judul">PIMPINAN UNIVERSITAS JEMBER</h3>
+            <div class="row">
+                <div class="col-besar-3">
+                    <div class="profil-card">
+                        <img src="assets/images/rektor.png" alt="" class="profil-photo">
+                        <div class="profil-name">Rektorku</div>
+                        <div class="profil-role">Rektor</div>
                     </div>
-                    <div class="contact-data">
-                        <div class="contact-icon">
-                            <img src="MOBILE.png" alt="">
-                        </div>
-                        <span class="contact-text">
-                            (0331) 330-224 <br>
-                            (0331) 334-270
-                        </span>
+                </div>
+                <div class="col-besar-3">
+                    <div class="profil-card">
+                        <img src="assets/images/rektor.png" alt="" class="profil-photo">
+                        <div class="profil-name">Rektorku</div>
+                        <div class="profil-role">Rektor</div>
                     </div>
-                    <div class="contact-data">
-                        <div class="contact-icon">
-                            <img src="pHONE.png" alt="">
-                        </div>
-                        <span class="contact-text">
-                            (0331) 333-147
-                        </span>
+                </div>
+                <div class="col-besar-3">
+                    <div class="profil-card">
+                        <img src="assets/images/rektor.png" alt="" class="profil-photo">
+                        <div class="profil-name">Rektorku</div>
+                        <div class="profil-role">Rektor</div>
                     </div>
-                    <div class="contact-data">
-                        <div class="contact-icon">
-                            <img src="MAIL.png" alt="">
-                        </div>
-                        <span class="contact-text">
-                            humas@unej.ac.id
-                        </span>
+                </div>
+                <div class="col-besar-3">
+                    <div class="profil-card">
+                        <img src="assets/images/rektor.png" alt="" class="profil-photo">
+                        <div class="profil-name">Rektorku</div>
+                        <div class="profil-role">Rektor</div>
                     </div>
-                    <div class="contact-data">
-                        <div class="contact-icon">
-                            <img src="JAM.png" alt="">
-                        </div>
-                        <span class="contact-text">
-                            Senin - Kamis 07.00 s.d 16.00 WIB <br>
-                            Jumat 06.30 s.d 16.30 WIB
-                        </span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-besar-12">
+                    <div class="profil-detail">
+                        <div class="profil-name-detail">Rektor 1</div>
+                        <p class="profil-description">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+                            dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
+                            book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially
+                            unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and
+                            more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                        </p>
                     </div>
+                    <div class="profil-detail">
+                        <div class="profil-name-detail">Rektor 1</div>
+                        <p class="profil-description">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+                            dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
+                            book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially
+                            unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and
+                            more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- <div class="profil">
+                <img class="foto-profil" src="assets/images/rektor.png" alt="">
+                <div class="nama-profil">Drs. Moh. Hasan, M.Sc, Ph.D</div>
+                <div class="jabatan-profil"><b>Rektor</b></div>
+            </div>
+            <div class="profil">
+                <img class="foto-profil" src="assets/images/warek1.png" alt="">
+                <div class="nama-profil">Drs. Zulfikar, Ph.D</div>
+                <div class="jabatan-profil"><b></b> Rektor I</div>
+            </div>
+            <div class="profil">
+                <img class="foto-profil" src="assets/images/warek2.png" alt="">
+                <div class="nama-profil">Drs. Wachju Subchan, MS., Ph.D</div>
+                <div class="jabatan-profil">Wakil Rektor II</div>
+            </div>
+            <div class="profil">
+                <img class="foto-profil" src="assets/images/warek3.png" alt="">
+                <div class="nama-profil">Prof. Dr. M. Sulton, M.Pd.</div>
+                <div class="jabatan-profil">Wakil Rektor III</div>
+            </div> -->
+        </div>
+    </main>
+    <footer>
+        <div class="bawah">
+            <h3>HUBUNGI KAMI DI :</h3>
+            <div class="contact-info">
+                <div class="contact-data">
+                    <i class="fa fa-home"></i>
+                    <span class="contact-text">
+                        Jalan. Kalimantan No. 37 Jember
+                    </span>
+                </div>
+                <div class="contact-data">
+                    <i class="fa fa-phone"></i>
+                    <span class="contact-text">
+                        (0331) 330-224
+                    </span>
+                </div>
+                <div class="contact-data">
+                    <i class="fa fa-fax"></i>
+                    <span class="contact-text">
+                        (0331) 333-147
+                    </span>
+                </div>
+                <div class="contact-data">
+                    <i class="fa fa-envelope"></i>
+                    <span class="contact-text">
+                        humas@unej.ac.id
+                    </span>
+                </div>
+                <div class="contact-data">
+                    <i class="fa fa-clock-o"></i>
+                    <span class="contact-text">
+                        Senin - Jum'at 07.00 s.d 16.00 WIB
+                    </span>
                 </div>
             </div>
         </div>
     </footer>
 
+
 </body>
+
 </html>

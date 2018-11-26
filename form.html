@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Struktur Organisasi Universitas Jember</title>
+    <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/grid.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script type="text/javascript" src="assets/js/script.js"></script>
+</head>
+
+<body> 
+    <nav>
+        <div class="container">
+            <div class="row">
+                <div class="col-4">
+                    <div class="logo">
+                        <div class="logo-text">UNIVERSITAS JEMBER</div>
+                    </div>
+                </div>
+                <div class="col-8">
+                    <div class="navbar">
+                        <button id="nav-icon">
+                            <i id="nav-icon-fa" class="fa fa-bars"></i>
+                        </button>
+                        <ul class="menu-container">
+                            <li class="menu"><a href="index.html">Beranda</a></li>
+                            <li class="menu"><a href="organisasi.html">Organisasi</a></li>
+                            <li class="menu"><a href="sejarah.html">Sejarah</a></li>
+                            <li class="menu"><a id="open-dropdown" href="javascript:void(0)">Lainnya <i class="fa fa-chevron-circle-down"></i></a>
+                                <div class="dropdown-container">
+                                    <div id="dropdown-content" class="dropdown-content hidden">
+                                        <p><a href="visi-misi.html">VISI MISI</a></p>
+                                        <p><a class="active" href="tujuan.html">TUJUAN</a></p>
+                                        <p><a href="tugas-pokok.html">TUGAS POKOK</a></p>
+                                        <P><a href="motto.html">MOTTO</a></P>
+                                        <P><a href="fungsi.html">FUNGSI</a></P>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="container">
+            <h3 class="judul">FORM KRITIK DAN SARAN</h3>
+            <p class="post-content">Kirimkan kritik dan saranmu untuk para civitas Universitas Jember
+            dalam rangka menginovasi dan memperbaiki kinerja yang ada.  </p>
+            
+            <div class="row">
+                <div class="col-besar-6">
+                    <div class="form-group">
+                        <label for="nama"> Nama Lengkap : *</label>
+                        <input type="text" placeholder="Nama Lengkap" id="nama">
+                    </div>
+                    <div class="form-group">
+                        <label for="nim"> NIM / NIP : *</label>
+                        <input type="number" placeholder="NIM / NIP Anda" id="nim">
+                    </div>
+                    <div class="form-group">
+                        <label for="fakultas"> Asal Fakultas / Unit Kerja : *</label>
+                        <select id="fakultas">
+                            <option selected disabled>Pilih Fakultas / Unit Kerja</option>
+                            <option value="FIKOM">Fakultas Ilmu Komputer</option>
+                            <option value="FK">Fakultas Kedokteran</option>
+                            <option value="UPT">UPT</option>
+                            <option value="Kantor Pusat">Kantor Pusat</option>
+                        </select>
+                    </div> 
+                    <div class="form-group">
+                        <label for="prodi"> Asal Program Studi / Sub Unit Kerja : *</label>
+                        <select id="prodi">
+                            <option selected disabled>Pilih Prodi / Sub Unit Kerja</option>
+                            <option value="SI">Sistem Informasi</option>
+                            <option value="TI">Teknologi Informasi</option>
+                            <option value="BAAK">BAAK</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="email"> E-mail : *</label>
+                        <input type="text" placeholder="Email Anda" id="email">
+                    </div>
+                </div>
+                <div class="col-besar-6">
+                    <div class="form-group">
+                        <label for="kritiksaran">Masukkan Kritik dan Saran Anda : *</label>
+                        <textarea name="kritiksaran" id="kritiksaran" rows="16"></textarea>
+                    </div>
+                    <input class="button float-right" type="submit" onclick="terimainput()" value="KIRIM">
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-besar-12">
+                    <div class="table-container">
+                        <table id="inputan">
+                            <thead>
+                                <tr>
+                                    <td>Tanggal</td>
+                                    <td>Nama Lengkap</td>
+                                    <td>NIM/NIP</td>
+                                    <td>Fakultas/Unit Kerja</td>
+                                    <td>Prodi/Sub Unit Kerja</td>
+                                    <td>Email</td>
+                                    <td>Kritik dan Saran</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="bawah">
+            <h3>HUBUNGI KAMI DI :</h3>
+            <div class="contact-info">
+                <div class="contact-data">
+                    <i class="fa fa-home"></i>
+                    <span class="contact-text">
+                        Jalan. Kalimantan No. 37 Jember
+                    </span>
+                </div>
+                <div class="contact-data">
+                    <i class="fa fa-phone"></i>
+                    <span class="contact-text">
+                        (0331) 330-224
+                    </span>
+                </div>
+                <div class="contact-data">
+                    <i class="fa fa-fax"></i>
+                    <span class="contact-text">
+                        (0331) 333-147
+                    </span>
+                </div>
+                <div class="contact-data">
+                    <i class="fa fa-envelope"></i>
+                    <span class="contact-text">
+                        humas@unej.ac.id
+                    </span>
+                </div>
+                <div class="contact-data">
+                    <i class="fa fa-clock-o"></i>
+                    <span class="contact-text">
+                        Senin - Jum'at 07.00 s.d 16.00 WIB
+                    </span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
